@@ -30,3 +30,9 @@ int b = 2100000000;
 long c = (long)a + (long)b;
 Console.WriteLine(c);
 
+// Precision, Casting and Doubles
+
+decimal d = 42.1M;  // explicit type 
+decimal e = 38.2M;
+decimal f = checked( d + e);
+Console.WriteLine($"The answer is {f}");
