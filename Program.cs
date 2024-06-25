@@ -36,3 +36,21 @@ decimal d = 42.1M;  // explicit type
 decimal e = 38.2M;
 decimal f = checked( d + e);
 Console.WriteLine($"The answer is {f}");
+
+// Ifs and Conditionals
+
+int g = 5;
+int h = 3;
+int i = 4;
+
+if ((g + h + i > 10) || (g == h))
+{
+    Console.WriteLine("The answer is greater than 10");
+    Console.WriteLine("And the first number is equal to the second");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+    Console.WriteLine("Or the first number is not equal to the second");
+}
+
