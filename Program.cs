@@ -54,3 +54,13 @@ else
     Console.WriteLine("Or the first number is not equal to the second");
 }
 
+
+
+int counter = 10;
+do
+{
+    
+    Console.WriteLine($"Hello {counter}");
+    counter++;
+}
+while (counter < 5);
