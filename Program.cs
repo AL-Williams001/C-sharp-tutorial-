@@ -41,9 +41,9 @@ Console.WriteLine($"The answer is {f}");
 
 int g = 5;
 int h = 3;
-int i = 4;
+int j = 4;
 
-if ((g + h + i > 10) || (g == h))
+if ((g + h + j > 10) || (g == h))
 {
     Console.WriteLine("The answer is greater than 10");
     Console.WriteLine("And the first number is equal to the second");
@@ -54,8 +54,21 @@ else
     Console.WriteLine("Or the first number is not equal to the second");
 }
 
+//For Loops
+//  Hold this for later
+for (
+    int i = 0; //initialize or start
+    i < 5;// conditional
+     i++) // iteration (which for now is incrementing by 1)
+{
+    if (i == 3){
+   Console.WriteLine(i);
+    //Do the thing
+    }
+}
 
 
+/*
 int counter = 10;
 do
 {
@@ -64,3 +77,4 @@ do
     counter++;
 }
 while (counter < 5);
+*/
