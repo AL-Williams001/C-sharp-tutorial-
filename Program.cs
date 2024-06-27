@@ -81,12 +81,11 @@ while (counter < 5);
 
 
 // List T and Collections of Data
-var names = new List<string> { "Mike", "Ana", "Felipe" };
+var names = new string [] { "Mike", "Ana", "Felipe" };
 
-names.Add("Mary");
-names.Add("Maria");
-names.Add("Damian");
+// names.Add("John");// LIST <T> method
 
+names = [..names, "Damian"];
 foreach (var name in names)
 {
     Console.WriteLine($"Hello {name.ToUpper()}!");
