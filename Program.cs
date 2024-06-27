@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Diagnostics;
+
 Console.WriteLine("Hello, AL!");
 
 
@@ -81,12 +83,27 @@ while (counter < 5);
 
 
 // List T and Collections of Data
-var names = new string [] { "Mike", "Ana", "Felipe" };
+// var names = new string [] { "Mike", "Ana", "Felipe" }; Array
 
 // names.Add("John");// LIST <T> method
 
-names = [..names, "Damian"];
-foreach (var name in names)
-{
-    Console.WriteLine($"Hello {name.ToUpper()}!");
-}
+// names = [..names, "Damian"];
+// foreach (var name in names)
+// {
+//     Console.WriteLine($"Hello {name.ToUpper()}!");
+// }
+
+
+//Sorting and Searching Lists,
+
+
+var numbers = new List<int> { 46, 56, 99, 48, 67, 78};
+
+Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
+numbers.Sort();
+Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
+// foreach (var number in numbers)
+// {
+//     Console.WriteLine($"{number}");
+// }
+
