@@ -111,17 +111,19 @@ Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
 //Language Integrated Query (LINQ) - Used to query collections
 
 //Specify the date source
-List<int> scores = [97, 92, 81, 60];
+List<int> scores = [3, 45, 82, 97, 92, 100,  81, 60];
 
 
 //Define the query expression
-IEnumerable<int> scoreQuery =
+IEnumerable<string> scoreQuery =
     from score in scores
     where score > 80
-    select score;
+    orderby score descending
+    select $"The score is {score}";
 
  //Execute the query
-foreach (int i in scoreQuery)
+foreach (string s in scoreQuery)
 {
-    Console.Write(i + " ");
+    Console.WriteLine(s);
 }   
+
